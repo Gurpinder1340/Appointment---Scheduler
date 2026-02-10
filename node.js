@@ -1,6 +1,6 @@
 import express from 'express';
 const app = express();
-const PORT = 3001;
+const PORT = 3000;
 
 app.use(express.static('Hello world'));
 
@@ -11,5 +11,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Server is running at https://localhost:${PORT}`);
+    console.log(`Server is running at http://localhost:${PORT}`);
 });

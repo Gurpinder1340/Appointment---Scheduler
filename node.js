@@ -4,3 +4,12 @@ const PORT = 3001;
 
 app.use(express.static('Hello world'));
 
+app.use(express.static(import.meta.dirname));
+
+app.get('/', (req, res) => {
+    res.sendFile(`${import.meta.dirname}/index.html`);
+});
+
+app.listen(PORT, () => {
+    console.log(`Server is running at https://localhost:${PORT}`);
+});

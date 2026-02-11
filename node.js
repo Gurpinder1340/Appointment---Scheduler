@@ -8,7 +8,7 @@ const appointments = [];
 
 app.use(express.urlencoded({ extended: true }));
 
-// Serve static files (your HTML and other assets)
+// Serve static files 
 app.use(express.static('Hello world'));
 
 app.use(express.static(import.meta.dirname));
@@ -18,8 +18,17 @@ app.get('/', (req, res) => {
     res.sendFile(`${import.meta.dirname}/index.html`);
 });
 
+
+// admin route ('/')
+app.get('/admin', (req, res) => {
+    res.send(appointments);
+});
+
+
+
 // POST route to handle form submissions
 app.post('/submit', (req, res) => {
+
 
     // Create a JSON object to store the appointment data
     const appointment = {

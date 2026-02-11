@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Appointment Scheduler</title>
 </head>
 <body>
-       form action="#" method="post">
+    <h1>Appointment Scheduler</h1>
+       <form action="/appointments" method="post">
         <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" required>
+        <input type="text" id="firstName" name="firstName">
         <span class="error" id="firstNameError">First name is required.</span>
-
+        <br>
+        
         <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" required>
-         <span class="error" id="lastNameError">Last name is required.</span>
+        <input type="text" id="lastName" name="lastName">
+        <span class="error" id="lastNameError">Last name is required.</span>
+        <br>
 
         <label for="date">Date:</label>
-        <input type="date" id="date" name="date" required>
+        <input type="date" id="date" name="date">
+        <br>
 
         <label for="time">Time:</label>
-        <input type="time" id="time" name="time" required>
+        <input type="time" id="time" name="time">
 
         <button type="submit">Submit</button>
     </form>
-        
-
-        </label>          
+                
     </body>
     </html>

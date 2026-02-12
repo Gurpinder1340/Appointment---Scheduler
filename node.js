@@ -48,10 +48,5 @@ app.post('/submit', (req, res) => {
 
 // Start the server
 app.listen(PORT, () => {
-<<<<<<< HEAD
-   console.log(`Server is running at https://localhost:${PORT}`);
-});
-=======
     console.log(`Server is running at http://localhost:${PORT}`);
 });
->>>>>>> 79eaca03e43b00f0372e8b7aeb6271ff07a2a635
